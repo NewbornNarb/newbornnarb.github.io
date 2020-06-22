@@ -123,7 +123,7 @@
         $(document).ready(function () {
             // Load all viewers
             $.get('./viewers/', function (data) {
-                $(data).find("li > a").each(function () {
+                $(data).find("td > a").each(function () {
                     const object = $("#viewer-inject")
                     const fileName = $(this).attr("href")
                     const template = `
@@ -144,7 +144,7 @@
 
             // Load all renders
             $.get('./renders/', function (data) {
-                $(data).find("li > a").each(function () {
+                $(data).find("td > a").each(function () {
                     const object = $("#render-inject")
                     const fileName = $(this).attr("href")
                     const imgtemplate = `
