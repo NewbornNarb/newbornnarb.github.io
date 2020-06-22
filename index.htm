@@ -122,14 +122,14 @@
     <script>
         $(document).ready(function () {
             // Load all viewers
-            $.get('./viewers/', function (data) {
+            $.get('/viewers/', function (data) {
                 $(data).find("td > a").each(function () {
                     const object = $("#viewer-inject")
                     const fileName = $(this).attr("href")
                     const template = `
                     <div class="col mb-3"> 
                         <div class="card border-0">
-                            <iframe src="${fileName}" class="card-img viewer-obj" frameborder="0" width="100%" height="350px" />
+                            <iframe src="/viewers/${fileName}" class="card-img viewer-obj" frameborder="0" width="100%" height="350px" />
                         </div>
                     </div>
                     `
@@ -143,14 +143,14 @@
             })
 
             // Load all renders
-            $.get('./renders/', function (data) {
+            $.get('/renders/', function (data) {
                 $(data).find("td > a").each(function () {
                     const object = $("#render-inject")
                     const fileName = $(this).attr("href")
                     const imgtemplate = `
                     <div class="col mb-3"> 
                         <div class="card border-0">
-                            <img src="${fileName}" class="card-img render-obj" width="100%" />
+                            <img src="/renders/${fileName}" class="card-img render-obj" width="100%" />
                         </div>
                     </div>
                     `
