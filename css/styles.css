@@ -1,0 +1,28 @@
+body {
+    background-color: #101010 !important;
+    color: white
+}
+
+.navbar-bg {
+    background-color: #101010 !important;
+}
+
+.navbar-brand {
+    filter: invert(0%) sepia(0%) saturate(100%) brightness(100%) contrast(100%);
+}
+
+.navbar-nav {
+    font-size: larger;
+}
+
+#demo-wrapper {
+    background-color: #0a0a0a;
+}
+
+#landing-wrapper {
+    background-color: #0a0a0a;
+}
+
+#demo {
+    min-height: 600px;
+}
