@@ -25,19 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="/index.htm">Home</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="/renders.htm">Renders</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="https://www.artstation.com/jesseatter" target="_blank">ArtStation</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="btn btn-outline-danger btn-lg" href="/resume.pdf" target="_blank">Resume</a>
-                        </li>
+                    <ul id="navbar-links" class="navbar-nav ml-auto">
                     </ul>
                 </div>
             </nav>
@@ -50,16 +38,9 @@
                             frameborder="0"></iframe>
                     </div>
                     <div class="col m-auto py-5 px-5">
-                        <h1 class="font-weight-light">Jesse Atter</h1>
-                        <p>I am a newly graduated student from Visual College of Arts and Design, specializing in 3D creature modelling and texturing. 
-						I also have a solid understanding of rigging and animating. I love learning about animals and how their mechanisms translate into 3D.</p>
-                        <a href="https://www.linkedin.com/in/jesseatter/" target="_blank" class="btn btn-outline-primary btn-lg"
-                            role="button">
-                            <i class="fa fa-linkedin-square"></i>
-                        </a>
-                        <a href="https://www.artstation.com/jesseatter" target="_blank" class="btn btn-outline-light btn-lg">
-                            <i class="fab fa-artstation"></i>
-                        </a>
+                        <h1 id="landing-heading-text" class="font-weight-light"></h1>
+                        <p id="landing-heading-paragraph"></p>
+                        <div id="landing-buttons"></div>
                     </div>
                 </div>
             </div>
@@ -78,15 +59,13 @@
                     <div class="col">
                         <nav class="nav flex-column">
                             <h6 class="nav-link">Contact</h6>
-                            <a href="tel:5875856581" target="_blank" class="nav-link">(587) 585-6581</a>
-                            <a href="mailto:j.atter66@gmail.com" target="_blank" class="nav-link">j.atter66@gmail.com</a>
+                            <div id="contact-links"></div>
                         </nav>
                     </div>
                     <div class="col">
                         <nav class="nav flex-column">
                             <h6 class="nav-link">Links</h6>
-                            <a href="https://www.linkedin.com/in/jesseatter/" target="_blank" class="nav-link">Linkedin</a>
-                            <a href="https://www.artstation.com/jesseatter" target="_blank" class="nav-link">ArtStation</a>
+                            <div id="link-links"></div>
                         </nav>
                     </div>
                 </div>
@@ -117,12 +96,11 @@
                     const object = $("#viewer-inject")
                     const fileName = $(this).attr("href")
                     const template = `
-                    <div class="col mb-3"> 
-                        <div class="card border-0">
-                            <iframe src="/viewers/${fileName}" class="card-img viewer-obj" frameborder="0" width="100%" height="350px" />
-                        </div>
-                    </div>
-                    `
+                        <div class="col mb-3"> 
+                            <div class="card border-0">
+                                <iframe src="/viewers/${fileName}" class="card-img viewer-obj" frameborder="0" width="100%" height="350px" />
+                            </div>
+                        </div>`
 
                     console.log(fileName)
 
@@ -130,6 +108,52 @@
 
                     object.append(template)
                 });
+            })
+
+            $.getJSON("./content.json", function(data) {
+                // Add nav links
+                navLinks = () => {
+                    for (var d of data["Menu"]) {
+                        var template = `
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="${d.Link}">${d.Text}</a>
+                            </li>`
+
+                        $("#navbar-links").append(template)
+                    }
+                }
+                // Add landing text
+                landingText = () => {
+                    $("#landing-heading-text").html(data.Landing.Heading)
+                    $("#landing-heading-paragraph").html(data.Landing.Paragraph)
+
+                    for (var d of data.Landing.Buttons) {
+                        var template = `
+                            <a href="${d.Link}" target="_blank" class="btn btn-outline-light btn-lg"
+                                role="button">
+                                ${d.Text}
+                            </a>`
+                        
+                        $("#landing-buttons").append(template)
+                    }
+                }
+                // Add footer text
+                footerText = () => {
+                    for (var d of data.Footer.Contact) {
+                        var template = `
+                            <a href="${d.Link}" target="_blank" class="nav-link">${d.Text}</a>`
+                        $("#contact-links").append(template)
+                    }
+                    for (var d of data.Footer.Links) {
+                        var template = `
+                            <a href="${d.Link}" target="_blank" class="nav-link">${d.Text}</a>`
+                        $("#link-links").append(template)
+                    }
+                }
+
+                navLinks()
+                landingText()
+                footerText()
             })
         })
     </script>

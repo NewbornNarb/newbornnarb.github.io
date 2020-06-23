@@ -1,0 +1,56 @@
+{
+    "Menu": [
+        { 
+            "Text": "Home",
+            "Link": "/index.htm"
+        },
+        { 
+            "Text": "Renders",
+            "Link": "/renders.htm"
+        },
+        { 
+            "Text": "ArtStation",
+            "Link": "https://www.artstation.com/jesseatter"
+        },
+        { 
+            "Text": "Resume",
+            "Link": "https://jesseatter.ca/resume.pdf"
+        }
+    ],
+    "Landing": {
+        "Heading": "Jesse Atter",
+        "Paragraph": "I am a newly graduated student from Visual College of Arts and Design, specializing in 3D creature modelling and texturing. I also have a solid understanding of rigging and animating. I love learning about animals and how their mechanisms translate into 3D.",
+        "Buttons": [
+            {
+                "Text": "<i class=\"fa fa-linkedin-square\"></i>",
+                "Link": "https://www.linkedin.com/in/jesseatter/"
+            },
+            {
+                "Text": "<i class=\"fab fa-artstation\"></i>",
+                "Link": "https://www.artstation.com/jesseatter"
+            }
+        ]
+    },
+    "Footer": {
+        "Contact": [
+            {
+                "Text": "(587) 585-6581",
+                "Link": "tel:5875856581"
+            },
+            {
+                "Text": "j.atter@gmail.com",
+                "Link": "mailto:j.atter@gmail.com"
+            }
+        ],
+        "Links": [
+            {
+                "Text": "Linkedin",
+                "Link": ""
+            },
+            {
+                "Text": "Artstation",
+                "Link": ""
+            }
+        ]
+    }
+}
