@@ -8,6 +8,10 @@
             "Text": "Renders",
             "Link": "/renders.htm"
         },
+        {
+            "Text": "Models",
+            "Link": "/models.htm"
+        },
         { 
             "Text": "ArtStation",
             "Link": "https://www.artstation.com/jesseatter"
