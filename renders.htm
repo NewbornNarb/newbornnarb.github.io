@@ -33,7 +33,7 @@
         <div id="renders-wrapper" class="pb-5 pt-5">
             <div class="container-fluid">
                 <h1 class="font-weight-light">Render Showcase</h1>
-                <div id="render-inject" class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div id="render-inject" class="card-columns">
                 </div>
             </div>
         </div>
@@ -80,17 +80,13 @@
                     const object = $("#render-inject")
                     const fileName = $(this).attr("href")
                     const imgtemplate = `
-                    <div class="col mb-3"> 
-                        <div class="card border-0">
-                            <img src="/renders/${fileName}" class="card-img render-obj" width="100%" />
-                        </div>
+                    <div class="card border-0 bg-transparent">
+                        <img src="/renders/${fileName}" class="card-img render-obj" width="100%" />
                     </div>
                     `
                     const vidtemplate = `
-                    <div class="col mb-3"> 
-                        <div class="card border-0">
-                            <video src="/renders/${fileName}" autoplay loop class="card-img render-obj" width="100%" />
-                        </div>
+                    <div class="card border-0 bg-transparent">
+                        <video src="/renders/${fileName}" autoplay loop class="card-img render-obj" width="100%" />
                     </div>
                     `
 
