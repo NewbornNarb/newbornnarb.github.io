@@ -9,6 +9,7 @@
             <v-spacer></v-spacer>
             <v-toolbar-title>
                 <v-img 
+                class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                 :src="require('../assets/logo.svg')"
                 max-width="80px"
                 max-height="50px"
@@ -35,6 +36,7 @@
                 icon 
                 dark 
                 text 
+                class="d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex"
                 ><v-icon>{{`mdi-${x.icon}`}}</v-icon></v-btn>
             </v-toolbar-items>
             <v-spacer></v-spacer>

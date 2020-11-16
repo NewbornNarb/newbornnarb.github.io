@@ -32,16 +32,20 @@
 			style="background-attachment: fixed;" 
 			class="align-center justify-center" 
 			dark>
-				<div 
-				style="padding: 50px; background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); margin: 100px">
-					<h3>{{projects.title}}</h3>
-					<p>{{projects.subtitle}}</p>
-					<Buttons
-					:data="projects.buttons"
-					outlined 
-					color="white"
-					/>
-				</div>
+				<v-layout align-center justify-center>
+
+					<div 
+					style="background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); min-width: 300px; width: 50%"
+					class="pa-5">
+						<h3>{{projects.title}}</h3>
+						<p>{{projects.subtitle}}</p>
+						<Buttons
+						:data="projects.buttons"
+						outlined 
+						color="white"
+						/>
+					</div>
+				</v-layout>
 			</v-img>
 		</v-container>
 		<v-container>
