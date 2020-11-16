@@ -1,0 +1,9 @@
+{
+    "title": "Jesse Atter",
+    "subtitle": "I am a newly graduated student from Visual College of Arts and Design, specializing in 3D modelling and texturing. I also have a solid understanding of rigging and animating. I love learning new techniques to improve my work and functionality in assets.",
+    "video": "https://www.youtube.com/embed/LYGRYP1iVvg",
+    "buttons": [
+        { "title": "linkedin", "link": "https://www.linkedin.com/in/jesseatter/", "newpage": true, "icon": "linkedin" },
+        { "title": "artstation", "link": "https://www.artstation.com/jesseatter", "newpage": true, "icon": "artstation" }
+    ]
+}

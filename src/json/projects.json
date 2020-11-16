@@ -1,0 +1,8 @@
+{
+    "title": "Something about projects",
+    "subtitle": "Something about how much you like working on projects. Something about why you should check out your models and renders. Check out my portfolio!",
+    "background": "renders/frog.png",
+    "buttons": [
+        { "title": "renders", "link": "/renders", "icon": "alien" }
+    ]
+}

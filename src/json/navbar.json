@@ -1,0 +1,12 @@
+{
+    "logo": "logo.svg",
+    "links": [
+        { "title": "Home", "link": "/" },
+        { "title": "Renders", "link": "/renders" },
+        { "title": "Resume", "link": "/resume.pdf", "newpage": true }
+    ],
+    "social": [
+        { "icon": "linkedin", "link": "https://www.linkedin.com/in/jesseatter/", "newpage": "true" },
+        { "icon": "artstation", "link": "https://www.artstation.com/jesseatter", "newpage": "true" }
+    ]
+}

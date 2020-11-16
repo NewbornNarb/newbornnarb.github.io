@@ -1,0 +1,9 @@
+{
+    "title": "Something to hook them into contacting you",
+    "subtitle": "Explain yourself, tell them what you want. Try and get them to click the contact button below.",
+    "logo": "logo.svg",
+    "buttons": [
+        { "title": "linkedin", "link": "https://www.linkedin.com/in/jesseatter/", "newpage": true, "icon": "artstation" },
+        { "title": "j.atter@gmail.com", "link": "copy", "icon": "email", "text": true }
+    ]
+}

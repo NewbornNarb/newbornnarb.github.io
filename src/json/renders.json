@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Jedi",
+        "file": "jedi.png"
+    },
+    {
+        "name": "Lizard",
+        "file": "lizard.png"
+    },
+    {
+        "name": "Giorno",
+        "file": "giorno.gif"
+    }
+]
