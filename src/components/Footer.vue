@@ -11,7 +11,7 @@
                                     <h3>Contact</h3>
                                 </v-list-item>
                                 <v-list-item>(587) 585-6581</v-list-item>
-                                <v-list-item>j.atter@gmail.com</v-list-item>
+                                <v-list-item>j.atter66@gmail.com</v-list-item>
                                 <v-list-item>Resume</v-list-item>
                             </v-list-item-group>
                         </v-list>
