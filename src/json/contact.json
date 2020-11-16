@@ -1,6 +1,6 @@
 {
-    "title": "Something to hook them into contacting you",
-    "subtitle": "Explain yourself, tell them what you want. Try and get them to click the contact button below.",
+    "title": "I'm already looking forward to hearing from you.",
+    "subtitle": "Private message me, email me, or give me a call.",
     "logo": "logo.svg",
     "buttons": [
         { "title": "linkedin", "link": "https://www.linkedin.com/in/jesseatter/", "newpage": true, "icon": "artstation" },
