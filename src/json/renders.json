@@ -1,5 +1,9 @@
 [
     {
+        "name": "Witch",
+        "file": "Witch.png"
+    },
+    {
         "name": "Jedi",
         "file": "jedi.png"
     },
