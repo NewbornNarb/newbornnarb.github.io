@@ -1,5 +1,8 @@
 @echo off
 
+echo "Started build..."
+node run build
+
 echo "Starting updating..."
 git pull
 git add *
