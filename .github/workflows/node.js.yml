@@ -27,8 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - name: Upload build artifact
-      uses: actions/upload-artifact@v2.2.3
+    - uses: EndBug/add-and-commit@v7
       with:
-        name: Test
-        path: dist
+        add: 'dist'
+        message: 'Commit dist from Github Actions'
+        push: true
