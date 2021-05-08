@@ -16,10 +16,12 @@ export default {
   data: () => ({
     drawer: false,
   }),
-  $route: {
-    immediate: true,
-    handler(to, _from) {
-      document.title = "Jesse Atter | " + to.name;
+  watch: {
+    $route: {
+        immediate: true,
+        handler(to, _from) {
+        document.title = "Jesse Atter | " + to.name;
+        },
     },
   },
   components: {
