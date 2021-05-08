@@ -14,7 +14,9 @@ jobs:
           
       - name: Rename index
         run: |
-          mv dist/index.html dist/404.html
+          mkdir dist/renders
+          cp dist/index.html dist/renders/index.html
+          cp dist/index.html dist/404.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
