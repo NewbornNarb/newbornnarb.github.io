@@ -4,9 +4,8 @@
         dark 
         flat
         fixed
-        height="100px"
+        height="60px"
         >
-            <v-spacer></v-spacer>
             <v-toolbar-title>
                 <v-img 
                 class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
@@ -15,7 +14,8 @@
                 max-height="50px"
                 contian></v-img>
             </v-toolbar-title>
-            <v-toolbar-items>
+            <v-spacer></v-spacer>
+            <v-toolbar-items class="ml-3">
                 <v-btn
                 v-for="(x, index) of data.links"
                 :key="`${index} ${x.title}`"
@@ -39,9 +39,8 @@
                 class="d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex"
                 ><v-icon>{{`mdi-${x.icon}`}}</v-icon></v-btn>
             </v-toolbar-items>
-            <v-spacer></v-spacer>
         </v-app-bar>
-        <div style="height: 95px"></div>
+        <div style="height: 60px"></div>
     </div>
 </template>
 
