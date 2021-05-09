@@ -16,7 +16,14 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' }
+            { hid: 'description', name: 'description', content: '3D Modeller and Texture Artist' },
+            { property: 'og:title', content: 'Jesse Atter' }, 
+            { property: 'og:description', content: 'Artist and Illustrator' },
+            { property: 'og:image', content: 'https://jesseatter.ca/preview.png' },
+            { property: 'og:url', content: 'https://jesseatter.ca' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { property: 'og:site_name', content: 'Jesse Atter' },
+            { property: 'fb:app_id', content: 'newbornnarb_github_io' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
