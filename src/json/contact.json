@@ -1,9 +1,0 @@
-{
-    "title": "I'm already looking forward to hearing from you.",
-    "subtitle": "Private message me, email me, or give me a call.",
-    "logo": "logo.svg",
-    "buttons": [
-        { "title": "linkedin", "link": "https://www.linkedin.com/in/jesseatter/", "newpage": true, "icon": "artstation" },
-        { "title": "j.atter66@gmail.com", "link": "copy", "icon": "email", "text": true }
-    ]
-}

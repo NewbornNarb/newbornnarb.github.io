@@ -1,35 +1,18 @@
 {
-  "name": "jesseatter.ca",
-  "version": "0.1.0",
+  "name": "newbornnarb.github.io",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "nuxt",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.11.0",
-    "vue": "^2.6.11",
-    "vue-pdf": "^4.2.0",
-    "vue-router": "^3.5.1",
-    "vuetify": "^2.4.11",
-    "vuex": "^3.6.2"
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.12",
-    "@vue/cli-plugin-router": "^4.5.12",
-    "@vue/cli-plugin-vuex": "^4.5.12",
-    "@vue/cli-service": "^4.5.12",
-    "axios": "^0.21.1",
-    "sass": "^1.32.11",
-    "sass-loader": "^8.0.0",
-    "vue-cli-plugin-axios": "0.0.4",
-    "vue-cli-plugin-vuetify": "^2.0.9",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.2"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/vuetify": "^1.11.3"
+  }
 }
