@@ -8,18 +8,13 @@
                 :key="index"
                 class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
                 >
-                    <v-hover>
-                        <template v-slot:default="{hover}">
-                            <v-img
-                            :src="require('@/assets/' + item)"
-                            height="100%"
-                            width="100%"
-                            class="rounded"
-                            :contain="hover"
-                            @click="() => show(item)"
-                            ></v-img>
-                        </template>
-                    </v-hover>
+                    <v-img
+                    :src="require('@/assets/' + item)"
+                    height="100%"
+                    width="100%"
+                    class="rounded"
+                    @click="() => show(item)"
+                    ></v-img>
                 </v-flex>
             </v-layout>
         </v-container>
