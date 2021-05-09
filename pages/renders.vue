@@ -44,6 +44,7 @@
                 </v-img>
             </v-card>
         </v-dialog>
+        <Footer />
     </div>
 </template>
 
@@ -57,7 +58,7 @@ export default Vue.extend({
         show(image: string) {
             this.inspect = true
             this.image = require('@/assets/' + image)
-        }
+        },
     }
 })
 </script>

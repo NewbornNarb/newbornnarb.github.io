@@ -9,7 +9,7 @@
                 <v-img
                 :src="require('@/assets/logo.svg')"
                 width="80px"
-                height="42px"
+                height="50px"
                 contain
                 ></v-img>
             </router-link>

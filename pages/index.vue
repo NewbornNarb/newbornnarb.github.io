@@ -90,5 +90,6 @@
             ></iframe>
         </v-img>
 
+        <Footer />
     </div>
 </template>
