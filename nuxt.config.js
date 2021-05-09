@@ -8,8 +8,8 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: '%s - newbornnarb.github.io',
-        title: 'newbornnarb.github.io',
+        titleTemplate: 'Jesse Atter',
+        title: 'Jesse Atter',
         htmlAttrs: {
             lang: 'en'
         },
