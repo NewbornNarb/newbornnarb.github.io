@@ -51,7 +51,7 @@
                             <span class="font">Texturing,</span>
                         </span>
                         <span class="text-h6 text-sm-h5 text-md-h4">
-                            <span class="font">Animation.</span>
+                            <span class="font">Rendering.</span>
                         </span>
                     </v-layout>
                 </div>
