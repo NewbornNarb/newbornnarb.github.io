@@ -31,7 +31,7 @@ export default Vue.extend({
     data: () => ({ copied: false }),
     methods: {
         copy() {
-            navigator.clipboard.writeText('noah.dashney@edu.sait.ca')
+            navigator.clipboard.writeText('j.atter66@gmail.com')
             this.copied = true
             setTimeout(() => this.copied = false, 800)
         }
